@@ -5,7 +5,6 @@ import { ReactComponent as SmileIcon } from "assets/icon/smile.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
 
-import "story.css";
 
 export default {
   title: "UI组件/Icon",

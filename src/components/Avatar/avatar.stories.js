@@ -1,6 +1,5 @@
 import React from "react";
 import Avatar from ".";
-import "story.css";
 
 export default {
   title: "UI组件/Avatar",

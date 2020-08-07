@@ -1,6 +1,7 @@
 import React from "react";
 import Badge from ".";
-import "story.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 
 export default {
   title: "UI组件/Badge",
@@ -8,5 +9,13 @@ export default {
 };
 
 export const Default = () => {
-  return <Badge />;
+  return <Badge count={5} />;
 };
+
+export const Dot = () => <Badge show variant="dot"></Badge>;
+
+export const WithIcon = () => (
+  <Badge show variant="dot">
+    <FontAwesomeIcon icon={faCommentDots} style={{ fontSize: "24px" }} />
+  </Badge>
+);

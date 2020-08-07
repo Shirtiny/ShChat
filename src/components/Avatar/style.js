@@ -1,14 +1,12 @@
 import styled, { css } from "styled-components";
+import { circle } from "utils/mixins";
 
-// 可复用css
+// 通用样式
 const circleMixinFunc = (color, size = "8px") => css`
   content: "";
   display: block;
   position: absolute;
-  width: ${size};
-  height: ${size};
-  border-radius: 50%;
-  background-color: ${color};
+  ${circle(color, size)}
 `;
 
 // 头像组件样式
