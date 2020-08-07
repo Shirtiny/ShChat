@@ -30,9 +30,12 @@ function NavBar({ ...rest }) {
         <MenuItem icon={faFolder} />
         <MenuItem icon={faStickyNote} />
         <MenuItem icon={faEllipsisH} />
-        <MenuItem icon={faCog} css={`
-          align-self: end;
-        `}/>
+        <MenuItem
+          icon={faCog}
+          css={`
+            align-self: end;
+          `}
+        />
       </MenuItems>
     </StyledNavBar>
   );
@@ -42,7 +45,7 @@ function NavBar({ ...rest }) {
 function MenuItem({ icon, active, showBadge, ...rest }) {
   return (
     <StyledMenuItem active={active} {...rest}>
-      <a href="#">
+      <a href="http://#">
         <Badge show={showBadge}>
           <MenuIcon active={active} icon={icon} />
         </Badge>
