@@ -21,14 +21,14 @@ const StatusIcon = styled.div`
   top: 4px;
 
   &::before {
-    ${({ size }) => circleMixinFunc("white", size)}
+    ${({ size, statusIconBgColor }) => circleMixinFunc(statusIconBgColor, size)}
 
     transform: scale(2);
   }
 
   ::after {
-    ${({ theme, size, status }) =>
-      circleMixinFunc(status === "on" ? theme.green : theme.gray, size)}
+    ${({ theme, size, status, statusIconOffColor }) =>
+      circleMixinFunc(status === "on" ? theme.green : statusIconOffColor, size)}
   }
 `;
 

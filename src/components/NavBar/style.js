@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { activeBar } from "utils/mixins";
+import StyledAvatar from "components/Avatar/style";
 
 const StyledMenuItem = styled.div`
   & > a {
@@ -28,8 +29,25 @@ const MenuIcon = styled(FontAwesomeIcon)`
   opacity: ${({ active }) => (active ? 1 : 0.3)};
 `;
 
-const StyledNavBar = styled.div``;
+const StyledNavBar = styled.nav`
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+  width: 100px;
+  background-color: ${({ theme }) => theme.darkPurple};
+  padding: 30px 0;
+
+  /* 设置头像的style */
+  ${StyledAvatar} {
+    justify-self: center;
+  }
+`;
+
+const MenuItems = styled.div`
+  display: grid;
+  grid-template-rows: repeat(5, minmax(auto, 88px)) 1fr;
+`;
 
 export default StyledNavBar;
 
-export { StyledMenuItem, MenuIcon };
+export { StyledMenuItem, MenuIcon, MenuItems };
