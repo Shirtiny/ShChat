@@ -19,6 +19,19 @@ ReactDOM.render(
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
+// jsconfig.json 文件说明
+// {
+//   //vscode配置 可以默认使用src作为根目录 可以不使用../相对路径
+//   "compilerOptions": {
+//     //基本路径
+//     "baseUrl": "src"
+//   },
+//   //源代码
+//   "include": ["src"],
+//   //不是源代码
+//   "exclude": ["node_modules", "**/node_modules/*"]
+// }
+
 // npx -p @storybook/cli sb init
 // npm i -g hygen
 // hygen init self
