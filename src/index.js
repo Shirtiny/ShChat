@@ -18,3 +18,10 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+// npx -p @storybook/cli sb init
+// npm i -g hygen
+// hygen init self
+// hygen generator new component(自定文件夹)
+// 配置好模版文件 component（是生成器） new（是action）
+// hygen component new --name Icon （--name 可省略）
