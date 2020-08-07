@@ -7,7 +7,7 @@ import <%= name %> from ".";
 import "story.css";
 
 export default {
-  title: "<%= name %>",
+  title: "UI组件/<%= name %>",
   component: <%= name %>,
 };
 
