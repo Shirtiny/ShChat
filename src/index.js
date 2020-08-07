@@ -38,3 +38,12 @@ serviceWorker.unregister();
 // hygen generator new component(自定文件夹)
 // 配置好模版文件 component（是生成器） new（是action）
 // hygen component new --name Icon （--name 可省略）
+
+
+// svg create-react-app 自带配置了
+// font-awesome安装： 注意是@ fort awesome
+// yarn add @fortawesome/react-fontawesome
+// yarn add @fortawesome/fontawesome-svg-core
+// yarn add @fortawesome/free-brands-svg-icons
+// yarn add @fortawesome/free-regular-svg-icons
+// yarn add @fortawesome/free-solid-svg-icons
