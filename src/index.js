@@ -37,7 +37,7 @@ serviceWorker.unregister();
 // hygen init self
 // hygen generator new component(自定文件夹)
 // 配置好模版文件 component（是生成器） new（是action）
-// hygen component new --name Icon （--name 可省略）
+// hygen component new --name Icon(名字) （--name 可省略）
 
 
 // svg create-react-app 自带配置了
