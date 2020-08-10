@@ -9,6 +9,10 @@ export default {
   // 侧导航背景色
   darkPurple: "#292F4C",
 
+  background: "white",
+  inactiveColor: "rgba(41, 47, 76, 0.3)",
+  inactiveColorDark: "white",
+
   // 字体通常大小 14px
   normal: "1.4rem",
   medium: "1.6rem",
