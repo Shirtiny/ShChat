@@ -7,9 +7,9 @@ function Filter({ children, ...rest }) {
   return <StyledFilter {...rest}>{children}</StyledFilter>;
 }
 
-Filter.Filters = ({ children, lable, ...rest }) => (
+Filter.Filters = ({ children, label, ...rest }) => (
   <Filters {...rest}>
-    <Text type="secondary">{lable}: </Text>
+    <Text type="secondary">{label}: </Text>
     {children}
   </Filters>
 );
