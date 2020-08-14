@@ -31,7 +31,8 @@ function TitleBar({ status = "off", src = avatarImg, ...rest }) {
 }
 
 TitleBar.propTypes = {
-  children: PropTypes.any,
+  status: PropTypes.oneOf(["on", "off"]),
+  src: PropTypes.string.isRequired,
 };
 
 export default TitleBar;
